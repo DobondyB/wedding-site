@@ -47,13 +47,19 @@ table {
 }
 
 /*
-font-family: 'Great Vibes', cursive;
+font-family: 'Great Vibes';
 font-family: 'Libre Baskerville', serif;
 font-family: 'Mulish', sans-serif;
 */
 
 /* ==== GENERAL STYLES ==== */
 
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
 
 /* ==== HERO ==== */
 
@@ -97,7 +103,7 @@ font-family: 'Mulish', sans-serif;
     font-weight: 500;
 }
 
-h1::after {
+.header h1::after {
     display: block;
     content: "";
     background-color: #fff;
@@ -115,4 +121,51 @@ h1::after {
     width: 1.5rem;
     vertical-align: middle;
     margin: 0 .5rem;
+  }
+
+  /* ==== LOCATIONS ==== */
+
+  .locations {
+    background: url(assets/wedding-landing-background.png);
+    display: block;
+  }
+
+  .locations h2 {
+    font-family: 'Great Vibes';
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .column h3, .column div {
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .column h3 {
+    font-weight: 700;
+  }
+
+  .column div {
+    line-height: 1.5rem;
+  }
+
+  .column::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
   }
