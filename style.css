@@ -64,7 +64,6 @@ section {
 }
 
 body {
-    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -81,6 +80,14 @@ a {
     font-size: 1rem;
     text-decoration: none;
 }
+
+    @media (min-width: 1440px) {
+        body {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
 /* ==== HERO ==== */
 
@@ -113,6 +120,7 @@ a {
 .header h2 {
     color: #d2ba87;
     font-weight: 500;
+    margin-top: -2rem;
 }
 
 .header p {
@@ -160,6 +168,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
+    margin-bottom: 2rem;
   }
 
   .column img {
@@ -188,12 +198,35 @@ a {
     background-color: #444349;
   }
 
+    @media (min-width: 768px) {
+        .column-wrapper {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2rem;
+        }
+
+        .column h3 {
+            font-size: 1.5rem;
+        }
+
+        .column::after {
+            display: none;
+        }
+
+        .locations {
+            margin-bottom: -0rem;
+            background: url(assets/wedding-landing-background.png);
+        }
+    }
+
   /* ==== PROGRAM ==== */
 
   .program { 
     display: flex;
     flex-direction: column;
     background-color: hsla(100,0%,0%,.6);
+    width: 99.99999999999vw;
+
   }
 
   .program-wrapper {
@@ -219,6 +252,12 @@ a {
     padding-right: 1rem;
   }
 
+    @media (min-width: 1440px) {
+        .site {
+            background: url(assets/wedding-landing-background.png);
+        }
+    }
+
   /* ==== GIFTS ==== */
 
   .gifts {
@@ -226,6 +265,7 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 400;
+    background: url(assets/wedding-landing-background.png);
   }
 
   .gifts h2 {
@@ -236,6 +276,17 @@ a {
     height: 7rem;
     width: 7rem;
   }
+
+    @media (min-width: 1440px) {
+        .gifts h2 {
+            margin-top: -2rem;
+        }
+
+        .gifts p {
+            margin-bottom: -1.5rem;
+            padding-bottom: 2rem;
+        }
+    }
 
   /* ==== Q&A ==== */
 
@@ -281,6 +332,26 @@ a {
     background-color: #d2ba87;
   }
 
+    @media (min-width: 1024px) {
+        .qna-column-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .qna-column {
+            max-width: 300px;
+        }
+
+        .qna-column::after {
+            display: none;
+        }
+
+        .question {
+            line-height: 1.3rem;
+        }
+    }
+
   /* ==== CONTACT ==== */
 
   .contact h2 {
@@ -298,13 +369,25 @@ a {
     padding-bottom: 1rem;
   }
 
+    @media (min-width: 1440px) {
+        .contact {
+            background: url(assets/wedding-landing-background.png);
+            margin-top: -2rem;
+        }
+
+        .email {
+            margin-bottom: -1.5rem;
+        }
+    }
+
   /* ==== FOOTER ==== */
 
   .footer {
-    background-color: hsla(100,0%,0%,.6);
+    background: hsla(100,0%,0%,.6);
     text-align: center;
     color: #fff;
     padding: 2rem;
+    width: 100%;
   }
 
   small {
