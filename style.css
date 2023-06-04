@@ -221,6 +221,10 @@ h2 {
     font-weight: 400;
   }
 
+  .gifts h2 {
+    margin-top: -1rem;
+  }
+
   .gifts img {
     height: 7rem;
     width: 7rem;
@@ -267,4 +271,21 @@ h2 {
     width: 50vw;
     margin: 1.5rem auto;
     background-color: #d2ba87;
+  }
+
+  /* ==== CONTACT ==== */
+
+  .contact h2 {
+    margin-top: -1rem;
+  }
+
+  .contact p {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .email {
+    padding-bottom: 1rem;
   }
