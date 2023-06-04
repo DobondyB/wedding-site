@@ -59,6 +59,12 @@ ul,ol,
 p,
 img {
     margin-bottom: 1.5rem;
+    color: #444349;
+}
+
+body {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* ==== HERO ==== */
@@ -168,4 +174,48 @@ img {
     width: 25vw;
     margin: 1.5rem auto;
     background-color: #444349;
+  }
+
+  /* ==== PROGRAM ==== */
+
+  .program { 
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(100,0%,0%,.6);
+  }
+
+  .wrapper {
+    max-width: 425px;
+    align-self: center;
+  }
+
+  .program h2, .program p {
+    text-align: center;
+    color:#d2ba87
+
+  }
+
+  .program h2 {
+    font-family: 'Great Vibes';
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .program p {
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  .program li {
+    color:#d2ba87;
+    font-size: 1.1rem;
+  }
+
+  .program li {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  li {
+    line-height: 1.7rem;
   }
