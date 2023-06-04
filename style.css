@@ -209,13 +209,7 @@ body {
   .program li {
     color:#d2ba87;
     font-size: 1.1rem;
-  }
-
-  .program li {
+    line-height: 1.7rem;
     padding-left: .5rem;
     padding-right: .5rem;
-  }
-
-  li {
-    line-height: 1.7rem;
   }
