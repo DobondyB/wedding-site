@@ -75,6 +75,13 @@ h2 {
     padding-top: 2rem;
 }
 
+a {
+    font-family: 'Libre Baskerville', serif;
+    color: #bd806e;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 /* ==== HERO ==== */
 
 .hero {
@@ -262,6 +269,7 @@ h2 {
   .answer {
     padding-bottom: 1rem;
     margin-top: -.5rem;
+    line-height: 20px;
   }
 
   .qna-column::after {
@@ -288,4 +296,22 @@ h2 {
 
   .email {
     padding-bottom: 1rem;
+  }
+
+  /* ==== FOOTER ==== */
+
+  .footer {
+    background-color: hsla(100,0%,0%,.6);
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+
+  small {
+    padding-top: 2rem;
+    font-size: .8rem;
+  }
+
+  .footer a {
+    font-size: .8rem;
   }
